@@ -43,7 +43,7 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           alt="Mist forest"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-green-deep/80 via-transparent to-transparent flex flex-col justify-center px-8 md:px-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white leading-tight mb-6 max-w-2xl drop-shadow-lg">
+          <h2 className="text-lg md:text-2xl font-black text-white leading-tight mb-6 max-w-2xl drop-shadow-lg">
             다음 야생 탐험을 위해 준비하세요.
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
