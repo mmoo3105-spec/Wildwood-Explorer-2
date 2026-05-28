@@ -28,7 +28,7 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
         <button className="p-2 -ml-2 text-brand-green-deep">
           <span className="material-symbols-outlined">menu</span>
         </button>
-        <h1 className="text-4xl font-black tracking-tight">와일드우드 익스플로러</h1>
+        <h1 className="text-6xl font-black tracking-tight">와일드우드 익스플로러</h1>
         <button className="p-2 -mr-2 text-brand-green-deep relative">
           <span className="material-symbols-outlined text-4xl">shopping_bag</span>
           <span className="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">2</span>
