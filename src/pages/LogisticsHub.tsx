@@ -23,7 +23,7 @@ export default function LogisticsHub({ onNavigate }: LogisticsHubProps) {
           <button onClick={() => onNavigate('home')} className="p-2 -ml-2 text-brand-green-deep active:scale-95 transition-transform">
             <span className="material-symbols-outlined">arrow_back</span>
           </button>
-          <h1 className="text-lg font-black tracking-tight">와일드우드 익스플로러</h1>
+          <h1 className="text-lg font-black tracking-tight">CampToGo</h1>
         </div>
         <button 
           onClick={() => onNavigate('home')}
