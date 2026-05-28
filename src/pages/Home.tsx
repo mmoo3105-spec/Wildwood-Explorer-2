@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useState } from 'react';
 import { Product, Page } from '../types';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 
 interface HomeProps {
   products: Product[];
@@ -21,11 +22,13 @@ const CATEGORIES = [
 ];
 
 export default function Home({ products, onProductClick, onAddClick, onNavigate }: HomeProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-8">
       {/* Header */}
       <header className="flex justify-between items-center mb-10">
-        <button className="p-2 -ml-2 text-brand-green-deep">
+        <button onClick={() => setIsMenuOpen(true)} className="p-2 -ml-2 text-brand-green-deep">
           <span className="material-symbols-outlined">menu</span>
         </button>
         <h1 className="text-6xl font-black tracking-tight">와일드우드 익스플로러</h1>
@@ -196,6 +199,53 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           </div>
         </div>
       </section>
+
+      {/* Side Menu Drawer */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              exit={{ opacity: 0 }} 
+              className="fixed inset-0 bg-black/50 z-[100]"
+              onClick={() => setIsMenuOpen(false)}
+            />
+            <motion.div
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="fixed top-0 left-0 h-full w-3/4 max-w-sm bg-white z-[101] shadow-2xl p-6 flex flex-col rounded-r-3xl"
+            >
+              <div className="flex justify-between items-center mb-8">
+                <h2 className="text-2xl font-black text-brand-green-deep">메뉴</h2>
+                <button onClick={() => setIsMenuOpen(false)} className="p-2 text-brand-green-deep/50 hover:text-brand-green-deep transition-colors bg-brand-green-deep/5 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-outlined">close</span>
+                </button>
+              </div>
+              <div className="flex flex-col gap-4 flex-grow">
+                <button className="flex items-center gap-4 text-lg font-bold text-brand-green-deep p-4 rounded-xl hover:bg-brand-green-deep/5 transition-colors text-left" onClick={() => setIsMenuOpen(false)}>
+                  <span className="material-symbols-outlined">person</span>
+                  내 프로필
+                </button>
+                <button className="flex items-center gap-4 text-lg font-bold text-brand-green-deep p-4 rounded-xl hover:bg-brand-green-deep/5 transition-colors text-left" onClick={() => setIsMenuOpen(false)}>
+                  <span className="material-symbols-outlined">favorite</span>
+                  찜한 장비
+                </button>
+                <button className="flex items-center gap-4 text-lg font-bold text-brand-green-deep p-4 rounded-xl hover:bg-brand-green-deep/5 transition-colors text-left" onClick={() => setIsMenuOpen(false)}>
+                  <span className="material-symbols-outlined">settings</span>
+                  설정
+                </button>
+                <button className="flex items-center gap-4 text-lg font-bold text-brand-green-deep p-4 rounded-xl hover:bg-brand-green-deep/5 transition-colors text-left mt-auto" onClick={() => setIsMenuOpen(false)}>
+                  <span className="material-symbols-outlined">logout</span>
+                  로그아웃
+                </button>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
