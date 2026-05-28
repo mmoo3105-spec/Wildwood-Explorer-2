@@ -45,14 +45,14 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           className="absolute inset-0 w-full h-full object-cover brightness-75 transition-transform duration-[10s] hover:scale-110"
           alt="Mist forest camping"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-green-deep/80 via-transparent to-transparent flex flex-col justify-center px-8 md:px-16">
+        <div className="absolute inset-0 bg-gradient-to-l from-brand-green-deep/80 via-transparent to-transparent flex flex-col justify-center items-end text-right px-8 md:px-16">
           <h2 className="text-lg md:text-2xl font-black text-white leading-tight mb-6 max-w-2xl drop-shadow-lg">
             다음 야생 탐험을 위해 준비하세요.
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
             현대적인 아웃도어 매니아를 위한 프리미엄 장비 큐레이션. 험난한 산 정상부터 아늑한 숲 속까지.
           </p>
-          <div className="flex bg-white rounded-full p-1.5 max-w-md shadow-2xl">
+          <div className="flex bg-white rounded-full p-1.5 max-w-md w-full shadow-2xl text-left">
             <div className="flex-grow flex items-center px-4 gap-2 text-brand-green-deep/40">
               <span className="material-symbols-outlined text-xl">search</span>
               <input type="text" placeholder="장비, 브랜드, 활동 검색..." className="bg-transparent border-none focus:ring-0 text-brand-green-deep text-sm font-medium w-full" />
