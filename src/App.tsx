@@ -193,29 +193,29 @@ export default function App() {
             onClick={() => setCurrentPage('home')}
             className={`flex flex-col items-center gap-1 transition-colors ${currentPage === 'home' || currentPage === 'product' ? 'text-brand-orange' : 'text-brand-green-deep/40'}`}
           >
-            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] scale-110">storefront</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider">홈 대여</span>
+            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] text-3xl">storefront</span>
+            <span className="text-sm font-bold uppercase tracking-wider">홈 대여</span>
           </button>
           <button 
             onClick={() => setCurrentPage('logistics-hub')}
             className={`flex flex-col items-center gap-1 transition-colors ${currentPage === 'logistics-hub' || currentPage === 'delivery' || currentPage === 'cleaning' ? 'text-brand-orange' : 'text-brand-green-deep/40'}`}
           >
-            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] scale-110">local_shipping</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider">배송/세탁</span>
+            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] text-3xl">local_shipping</span>
+            <span className="text-sm font-bold uppercase tracking-wider">배송/세탁</span>
           </button>
           <button 
             onClick={() => setCurrentPage('campsites')}
             className={`flex flex-col items-center gap-1 transition-colors ${currentPage === 'campsites' ? 'text-brand-orange' : 'text-brand-green-deep/40'}`}
           >
-            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] scale-110">terrain</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider">캠핑장 예약</span>
+            <span className="material-symbols-outlined font-variation-settings-['FILL'_1] text-3xl">terrain</span>
+            <span className="text-sm font-bold uppercase tracking-wider">캠핑장 예약</span>
           </button>
           <button 
             onClick={() => setCurrentPage('summary')}
             className={`flex flex-col items-center gap-1 transition-colors ${currentPage === 'summary' ? 'text-brand-orange' : 'text-brand-green-deep/40'}`}
           >
-            <span className="material-symbols-outlined">receipt_long</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider">내 예약</span>
+            <span className="material-symbols-outlined text-3xl">receipt_long</span>
+            <span className="text-sm font-bold uppercase tracking-wider">내 예약</span>
           </button>
         </div>
       </nav>
