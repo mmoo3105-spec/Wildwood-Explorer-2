@@ -220,13 +220,7 @@ export default function App() {
         </div>
       </nav>
 
-      {/* Floating Gear Expert (Only on Home) */}
-      {currentPage === 'home' && (
-        <button className="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-brand-orange text-white px-6 py-4 rounded-full shadow-2xl shadow-brand-orange/30 z-40 transition-transform active:scale-95 flex items-center gap-3">
-          <span className="material-symbols-outlined">support_agent</span>
-          <span className="font-bold">장비 전문가</span>
-        </button>
-      )}
+
     </div>
   );
 }
