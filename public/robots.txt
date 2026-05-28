@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://camptogo.kr/sitemap.xml
+Sitemap: https://camptogo.shop/sitemap.xml
