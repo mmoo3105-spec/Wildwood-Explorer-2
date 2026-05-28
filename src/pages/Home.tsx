@@ -52,12 +52,12 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
             클릭 한 번으로 끝내는 캠핑 준비. 이제 몸만 가볍게 출발하세요!
           </p>
-          <div className="flex bg-white rounded-full p-1.5 max-w-md w-full shadow-2xl text-left">
-            <div className="flex-grow flex items-center px-4 gap-2 text-brand-green-deep/40">
-              <span className="material-symbols-outlined text-xl">search</span>
-              <input type="text" placeholder="장비, 브랜드, 활동 검색..." className="bg-transparent border-none focus:ring-0 text-brand-green-deep text-sm font-medium w-full" />
+          <div className="flex bg-white rounded-full p-1 max-w-sm w-full shadow-2xl text-left">
+            <div className="flex-grow flex items-center px-3 gap-2 text-brand-green-deep/40">
+              <span className="material-symbols-outlined text-lg">search</span>
+              <input type="text" placeholder="장비, 브랜드, 활동 검색..." className="bg-transparent border-none focus:ring-0 text-brand-green-deep text-xs font-medium w-full" />
             </div>
-            <button className="bg-brand-orange text-white px-6 py-2.5 rounded-full text-sm font-bold transition-transform active:scale-95 shadow-lg">
+            <button className="bg-brand-orange text-white px-5 py-2 rounded-full text-xs font-bold transition-transform active:scale-95 shadow-lg">
               검색
             </button>
           </div>
