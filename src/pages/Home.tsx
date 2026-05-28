@@ -47,7 +47,7 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
         />
         <div className="absolute inset-0 bg-gradient-to-l from-brand-green-deep/80 via-transparent to-transparent flex flex-col justify-center items-end text-right px-8 md:px-16">
           <h2 className="text-lg md:text-2xl font-black text-white leading-tight mb-6 max-w-2xl drop-shadow-lg">
-            다음 야생 탐험을 위해 준비하세요.
+            완벽한 힐링, 자연의 설레임만 담아 가세요.
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
             현대적인 아웃도어 매니아를 위한 프리미엄 장비 큐레이션. 험난한 산 정상부터 아늑한 숲 속까지.
