@@ -50,7 +50,7 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
             완벽한 힐링, 자연의 설레임만 담아 가세요.
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
-            현대적인 아웃도어 매니아를 위한 프리미엄 장비 큐레이션. 험난한 산 정상부터 아늑한 숲 속까지.
+            클릭 한 번으로 끝내는 캠핑 준비. 이제 몸만 가볍게 출발하세요!
           </p>
           <div className="flex bg-white rounded-full p-1.5 max-w-md w-full shadow-2xl text-left">
             <div className="flex-grow flex items-center px-4 gap-2 text-brand-green-deep/40">
