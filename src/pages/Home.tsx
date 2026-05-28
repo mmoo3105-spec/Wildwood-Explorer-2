@@ -41,9 +41,9 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
         <img 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEBJbElF_4SBaFg1IbU9kH7k8QX--gVtcQ-ftfWy3BU2AK4DDVznp53VjT7oDyY4z-k48BV-Ak7Kpq027eQT9UkXt5r3U7VrGbUMpA_G5R5vJAlXPrxgg3kWW_3u802mQ_RhH0vTjLOD1byArrbsJMAKpEaPPiYmftT4m7mJ2_PEwUNFRzq9XpSUSIiH9bsKcXmAQ7WHJcfPWQ41gv-ZmC_d0SRoY8vv7OPfYYKTXvhRQnuLHl14LVptvTeRpov3gWU0DJkvDidRg" 
+          src="/forest_camping.png" 
           className="absolute inset-0 w-full h-full object-cover brightness-75 transition-transform duration-[10s] hover:scale-110"
-          alt="Mist forest"
+          alt="Mist forest camping"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-green-deep/80 via-transparent to-transparent flex flex-col justify-center px-8 md:px-16">
           <h2 className="text-lg md:text-2xl font-black text-white leading-tight mb-6 max-w-2xl drop-shadow-lg">
