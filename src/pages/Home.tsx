@@ -32,7 +32,7 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           <span className="material-symbols-outlined">menu</span>
         </button>
         <h1 className="text-6xl font-black tracking-tight">CampToGo</h1>
-        <button className="p-2 -mr-2 text-brand-green-deep relative">
+        <button onClick={() => onNavigate?.('summary')} className="p-2 -mr-2 text-brand-green-deep relative hover:text-brand-orange transition-colors">
           <span className="material-symbols-outlined text-4xl">shopping_bag</span>
           <span className="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">2</span>
         </button>
