@@ -52,12 +52,12 @@ export default function Home({ products, onProductClick, onAddClick, onNavigate 
           <p className="text-white/80 text-lg mb-10 max-w-lg font-medium">
             현대적인 아웃도어 매니아를 위한 프리미엄 장비 큐레이션. 험난한 산 정상부터 아늑한 숲 속까지.
           </p>
-          <div className="flex bg-white rounded-full p-2 max-w-xl shadow-2xl">
-            <div className="flex-grow flex items-center px-4 gap-3 text-brand-green-deep/40">
-              <span className="material-symbols-outlined">search</span>
-              <input type="text" placeholder="장비, 브랜드, 활동 검색..." className="bg-transparent border-none focus:ring-0 text-brand-green-deep font-medium w-full" />
+          <div className="flex bg-white rounded-full p-1.5 max-w-md shadow-2xl">
+            <div className="flex-grow flex items-center px-4 gap-2 text-brand-green-deep/40">
+              <span className="material-symbols-outlined text-xl">search</span>
+              <input type="text" placeholder="장비, 브랜드, 활동 검색..." className="bg-transparent border-none focus:ring-0 text-brand-green-deep text-sm font-medium w-full" />
             </div>
-            <button className="bg-brand-orange text-white px-8 py-4 rounded-full font-bold transition-transform active:scale-95 shadow-lg">
+            <button className="bg-brand-orange text-white px-6 py-2.5 rounded-full text-sm font-bold transition-transform active:scale-95 shadow-lg">
               검색
             </button>
           </div>
